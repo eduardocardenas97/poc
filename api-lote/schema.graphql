@@ -1,0 +1,16 @@
+extend schema
+    @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+
+type Lote @key(fields: "id") {
+    "Identificador único do lote"
+    id: ID!
+    "Fecha de apertura"
+    fechaInicio: String!
+    "Fecha de cierre"
+    fechaFin: String!
+}
+
+type Query {
+    "Obtiene un lote por su id"
+    lote(id: ID!): Lote
+}

@@ -1,0 +1,16 @@
+{
+  "name": "api-lote",
+  "version": "1.0.0",
+  "description": "api de lotes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/subgraph": "^2.1.4",
+    "apollo-server": "^3.11.1",
+    "graphql": "^16.6.0"
+  }
+}
