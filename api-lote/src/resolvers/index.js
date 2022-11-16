@@ -1,5 +1,5 @@
 const types = {
-    ...require("./Lote"),
+    ...require("./Transaccion"),
 };
 
 module.exports = {
