@@ -19,5 +19,7 @@ type Transaccion @key(fields: "id") {
 
 type Query {
     "Obtiene un lote por su id"
-    lote(id: ID!): Lote
+    obtenerlote(id: ID!): Lote
+    "Lista lotes registrados"
+    listarLotes: [Lote]
 }
