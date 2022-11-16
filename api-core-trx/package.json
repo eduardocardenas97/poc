@@ -1,0 +1,28 @@
+{
+    "name": "trx_core",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm install &&  node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/subgraph": "^2.0.5",
+        "@grpc/grpc-js": "^1.1.0",
+        "@grpc/proto-loader": "^0.5.0",
+        "apollo-datasource-rest": "^3.6.1",
+        "apollo-server": "^3.10.1",
+        "dotenv": "^16.0.1",
+        "fi-utils": "git+https://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:x-oauth-basic@github.com/fintechinnovaciondev/fi-js-utils.git#main",
+        "google-protobuf": "^3.0.0",
+        "graphql": "^16.6.0",
+        "graphql-request": "^4.3.0",
+        "kafkajs": "^2.2.0",
+        "lodash": "^4.6.1",
+        "mongodb": "^4.9.0",
+        "object-hash": "^3.0.0"
+    }
+}

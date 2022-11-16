@@ -1,0 +1,30 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+
+enum Red {
+    AquiPago
+    PagoExpress
+}
+
+input Transaccion {
+    tipo: String!
+    moneda: String!
+    monto: Float!
+    red: Red!
+}
+
+type Transaccion {
+    id: ID!
+    tipo: String!
+    moneda: String!
+    monto: Float!
+    red: Red!
+}
+
+type Query {
+    id: ID!
+    trx(id: ID!): Transaccion
+}
+
+type Mutation {
+    realizarPago(operacion: Transaccion!): ID!
+}
