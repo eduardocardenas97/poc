@@ -1,10 +1,8 @@
 module.exports = {
-    Transaccion: () => {
-        return {
-            tipo: "PAGO",
-            moneda: "GUARANI",
-            monto: 1000,
-            red: "PagoExpress",
-        }
+    Transaccion: {
+        __resolveReference: async ({ id }, { dataSources }) => {
+            console.log("Transaccion.__resolveReference called for id " + id);
+            return dataSources.trxAPI.getTransaccionById(id);
+        },
     },
 };

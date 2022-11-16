@@ -3,17 +3,52 @@
         {
             "id": "lote-1",
             "fechaInicio": "2019-01-01",
-            "fechaFin": "2019-01-31"
+            "fechaFin": "2019-01-31",
+            "transacciones": [
+                {
+                    "id": "trx-0"
+                },
+                {
+                    "id": "trx-1"
+                },
+                {
+                    "id": "trx-2"
+                }
+            ]
         },
         {
             "id": "lote-2",
             "fechaInicio": "2019-02-01",
-            "fechaFin": "2019-02-28"
+            "fechaFin": "2019-02-28",
+            "transacciones": [
+                {
+                    "id": "trx-3"
+                }
+            ]
         },
         {
             "id": "lote-3",
             "fechaInicio": "2019-03-01",
-            "fechaFin": "2019-03-31"
+            "transacciones": [
+                {
+                    "id": "trx-4"
+                },
+                {
+                    "id": "trx-5"
+                },
+                {
+                    "id": "trx-6"
+                },
+                {
+                    "id": "trx-7"
+                },
+                {
+                    "id": "trx-8"
+                },
+                {
+                    "id": "trx-9"
+                }
+            ]
         }
     ]
 }

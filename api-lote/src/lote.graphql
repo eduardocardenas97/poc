@@ -7,7 +7,7 @@ type Lote @key(fields: "id") {
     "Fecha de apertura"
     fechaInicio: String!
     "Fecha de cierre"
-    fechaFin: String!
+    fechaFin: String
     "Lista de transacciones"
     transacciones: [Transaccion]
 }

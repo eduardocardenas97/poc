@@ -1,6 +1,6 @@
 const server = require("./initServer");
 
-const port = 4002;
+const port = 4007;
 const subgraphName = "locations";
 
 server

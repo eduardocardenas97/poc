@@ -1,10 +1,10 @@
 module.exports = {
-    transacciones: async (parent, args, context, info) => {
-        console.log("transacciones resolver called");
-        const trx = await context.dataSources.trxAPI.getTransaccionesByLoteId(
-            args.id
-        );
-        console.log("trx: ", trx);
-        return trx;
+    Lote: {
+        montoTotal: async ({ id }, _, { dataSources }) => {
+            console.log("Lote.montoTotal called for id " + id);
+            const transacciones =
+                await dataSources.trxAPI.getTransaccionesByLoteId(id);
+            return transacciones.reduce((sum, trx) => sum + trx.monto, 0);
+        },
     },
 };

@@ -28,4 +28,14 @@ module.exports = class LoteAPI extends DataSource {
         const lote = JSON.parse(loteData).lotes;
         return lote.find((lote) => lote.id === id);
     }
+
+    async getTransaccionesByLoteId(id) {
+        const loteData = fs.readFileSync(
+            path.join(__dirname, "lote_data.json"),
+            "utf8"
+        );
+        const lote = JSON.parse(loteData).lotes;
+        const loteFound = lote.find((lote) => lote.id === id);
+        return loteFound.transacciones;
+    }
 };

@@ -8,6 +8,7 @@ module.exports = {
         },
         listarLotes: async (parent, args, context, info) => {
             const lotes = await context.dataSources.loteAPI.getLotes();
+            console.log("lotes: ", lotes);
             return lotes;
         },
     },
