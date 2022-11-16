@@ -1,0 +1,74 @@
+{
+    "trx":[
+        {
+            "id":"trx-0",
+            "tipo": "PAGO",
+            "monto": 1000,
+            "red": "PagoExpress",
+            "loteId": "lote-0"
+        },
+        {
+            "id":"trx-1",
+            "tipo": "PAGO",
+            "monto": 2000,
+            "red": "AquiPago",
+            "loteId": "lote-2"
+        },
+        {
+            "id":"trx-2",
+            "tipo": "PAGO",
+            "monto": 3000,
+            "red": "PagoExpress",
+            "loteId": "lote-0"
+        },
+        {
+            "id":"trx-3",
+            "tipo": "PAGO",
+            "monto": 4000,
+            "red": "AquiPago",
+            "loteId": "lote-2"
+        },
+        {
+            "id":"trx-4",
+            "tipo": "PAGO",
+            "monto": 5000,
+            "red": "PagoExpress",
+            "loteId": "lote-0"
+        },
+        {
+            "id":"trx-5",
+            "tipo": "PAGO",
+            "monto": 6000,
+            "red": "AquiPago",
+            "loteId": "lote-2"
+        },
+        {
+            "id":"trx-6",
+            "tipo": "PAGO",
+            "monto": 7000,
+            "red": "PagoExpress",
+            "loteId": "lote-0"
+        },
+        {
+            "id":"trx-7",
+            "tipo": "PAGO",
+            "monto": 8000,
+            "red": "AquiPago",
+            "loteId": "lote-2"
+        },
+        {
+            "id":"trx-8",
+            "tipo": "PAGO",
+            "monto": 9000,
+            "red": "PagoExpress",
+            "loteId": "lote-0"
+        },
+        {
+            "id":"trx-9",
+            "tipo": "PAGO",
+            "monto": 10000,
+            "red": "AquiPago",
+            "loteId": "lote-2"
+        }
+    ]
+}

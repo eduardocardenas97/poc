@@ -5,26 +5,30 @@ enum Red {
     PagoExpress
 }
 
-input Transaccion {
+input trxInput {
     tipo: String!
     moneda: String!
     monto: Float!
     red: Red!
 }
 
-type Transaccion {
+type Transaccion @key(fields: "id") {
     id: ID!
     tipo: String!
-    moneda: String!
     monto: Float!
     red: Red!
 }
+
+type Lote @key(fields:"id") {
+    id: ID!
+    transacciones: [Transaccion]
+}
+
 
 type Query {
-    id: ID!
-    trx(id: ID!): Transaccion
+    obtenerTRX(id: ID!): Transaccion
 }
 
 type Mutation {
-    realizarPago(operacion: Transaccion!): ID!
+    realizarPago(operacion: trxInput!): ID!
 }
