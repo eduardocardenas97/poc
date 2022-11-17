@@ -4,7 +4,8 @@
     "description": "api de transacciones",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "publish-graph": "APOLLO_KEY=service:Federation-POC-qwfpni:SZmT3ew-A-azSLeCcN0isg   rover subgraph publish Federation-POC-qwfpni@current   --schema ./src/transaccion.graphql   --name transaccion   --routing-url http://localhost:4007"
     },
     "author": "",
     "license": "ISC",
