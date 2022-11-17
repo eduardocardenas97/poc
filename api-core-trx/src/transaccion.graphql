@@ -14,14 +14,22 @@ input trxInput {
 
 type Transaccion @key(fields: "id") {
     id: ID!
+    "Tipo de operacion"
     tipo: String!
+    "Monto de la transaccion"
     monto: Float!
+    "Red a la que pertenece"
     red: Red!
 }
 
 type Lote @key(fields: "id") {
     id: ID!
+    "Lista de transacciones"
+    transacciones: [Transaccion]
+    "Monto total acumulado"
     montoTotal: Float
+    "Cantidad de transacciones en el lote"
+    cantidadTransacciones: Int
 }
 
 type Query {

@@ -1,5 +1,4 @@
 const types = {
-    ...require("./Transaccion"),
     ...require("./Lote"),
 };
 
