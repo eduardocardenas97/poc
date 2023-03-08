@@ -1,0 +1,47 @@
+{
+    "receptoras": [
+        {
+            "id": 1,
+            "nombre": "Receptor 1",
+            "direccion": "Calle 1",
+            "telefono": "123456789",
+            "serviciosExcluidos": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Receptor 2",
+            "direccion": "Calle 2",
+            "telefono": "987654321",
+            "serviciosExcluidos": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                },
+                {
+                    "id": 3
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Receptor 3",
+            "direccion": "Calle 3",
+            "telefono": "123456789"
+        },
+        {
+            "id": 4,
+            "nombre": "Receptor 4",
+            "direccion": "Calle 4",
+            "telefono": "987654321"
+        }
+    ]    
+}

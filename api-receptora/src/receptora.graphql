@@ -1,0 +1,27 @@
+extend schema
+    @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+
+type Receptora @key(fields: "id") {
+    "Identificador único do lote"
+    id: ID!
+    "nombre del servicio"
+    nombre: String!
+    "descripcion del servicio"
+    direccion: String!
+    "telefono del servicio"
+    telefono: String!
+    "servicios excluidos"
+    serviciosExcluidos: [Servicio]
+}
+
+type Servicio {
+    "Identificador único del servicio"
+    id: ID!
+}
+
+type Query {
+    "Obtiene un lote por su identificador"
+    receptora(id: ID!): Receptora
+    "Obtiene todos los lotes"
+    receptoras: [Receptora]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "api-lote",
+    "version": "1.0.0",
+    "description": "api de receptora",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "publish-graph": "APOLLO_KEY=service:Federation-POC-qwfpni:SZmT3ew-A-azSLeCcN0isg   rover subgraph publish Federation-POC-qwfpni@current   --schema ./src/receptora.graphql   --name receptora   --routing-url http://localhost:4009"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/subgraph": "^2.1.4",
+        "apollo-server": "^3.11.1",
+        "graphql": "^16.6.0"
+    }
+}
