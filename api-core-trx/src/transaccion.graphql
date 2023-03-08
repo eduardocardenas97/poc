@@ -17,10 +17,12 @@ type Transaccion @key(fields: "id") {
     tipo: String!
     monto: Float!
     red: Red!
+    lote: Lote
 }
 
 type Lote @key(fields: "id") {
     id: ID!
+    transacciones: [Transaccion]
     montoTotal: Float
 }
 

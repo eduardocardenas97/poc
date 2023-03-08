@@ -8,13 +8,6 @@ type Lote @key(fields: "id") {
     fechaInicio: String!
     "Fecha de cierre"
     fechaFin: String
-    "Lista de transacciones"
-    transacciones: [Transaccion]
-}
-
-type Transaccion @key(fields: "id") {
-    "Identificador único de la transacción"
-    id: ID!
 }
 
 type Query {

@@ -6,7 +6,18 @@ module.exports = {
                 args.id
             );
             console.log("trx: ", trx);
-            return trx;
+            /**
+             * Para que el reference resolver funcione, el objeto que se retorna
+             * debe tener un campo con el nombre del tipo de dato que se está
+             * resolviendo, en este caso, "lote", y dentro de ese campo, una
+             * propiedad con un campo llamado "id"
+             */
+            return {
+                ...trx,
+                lote: {
+                    id: trx.loteId,
+                },
+            };
         },
     },
 };
