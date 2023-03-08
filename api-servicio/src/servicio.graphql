@@ -1,0 +1,20 @@
+extend schema
+    @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+
+type Servicio @key(fields: "id") {
+    "Identificador único do lote"
+    id: ID!
+    "nombre del servicio"
+    nombre: String!
+    "descripcion del servicio"
+    descripcion: String!
+    "proveedor del servicio"
+    proveedor: String!
+}
+
+type Query {
+    "Obtener un servicio por su identificador"
+    servicio(id: ID!): Servicio
+    "Obtener todos los servicios"
+    servicios: [Servicio]
+}

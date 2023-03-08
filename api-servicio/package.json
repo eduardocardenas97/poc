@@ -1,0 +1,17 @@
+{
+    "name": "api-lote",
+    "version": "1.0.0",
+    "description": "api de servicio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "publish-graph": "APOLLO_KEY=service:Federation-POC-qwfpni:SZmT3ew-A-azSLeCcN0isg   rover subgraph publish Federation-POC-qwfpni@current   --schema ./src/servicio.graphql   --name servicio   --routing-url http://localhost:4010"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/subgraph": "^2.1.4",
+        "apollo-server": "^3.11.1",
+        "graphql": "^16.6.0"
+    }
+}
