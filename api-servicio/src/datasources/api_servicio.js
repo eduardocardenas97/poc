@@ -25,7 +25,7 @@ module.exports = class ServicioAPI extends DataSource {
             path.join(__dirname, "servicio_data.json"),
             "utf8"
         );
-        const servicio = JSON.parse(servicioData).servicios;
-        return servicio.find((servicio) => servicio.id === id);
+        const servicios = JSON.parse(servicioData).servicios;
+        return servicios.find((servicio) => servicio.id == id);
     }
 };

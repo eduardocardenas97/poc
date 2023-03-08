@@ -37,6 +37,15 @@ class TrxAPI extends DataSource {
         const trx = JSON.parse(trxData).trx;
         return trx.filter((trx) => trx.loteId === loteId);
     }
+
+    async getTransaccionesByReceptoraId(receptoraId) {
+        const trxData = fs.readFileSync(
+            path.join(__dirname, "trx_data.json"),
+            "utf8"
+        );
+        const trx = JSON.parse(trxData).trx;
+        return trx.filter((trx) => trx.receptoraId === receptoraId);
+    }
 }
 
 module.exports = TrxAPI;

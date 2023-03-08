@@ -1,7 +1,7 @@
 module.exports = {
-    Servicio: {
+    Receptora: {
         __resolveReference: async ({ id }, { dataSources }) => {
-            return await dataSources.loteAPI.getLoteById(id);
+            return await dataSources.receptoraAPI.getReceptoraById(id);
         },
     },
 };

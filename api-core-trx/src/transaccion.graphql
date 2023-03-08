@@ -18,12 +18,23 @@ type Transaccion @key(fields: "id") {
     monto: Float!
     red: Red!
     lote: Lote
+    receptora: Receptora
+    servicio: Servicio!
+}
+
+type Servicio @key(fields: "id") {
+    id: ID!
 }
 
 type Lote @key(fields: "id") {
     id: ID!
     transacciones: [Transaccion]
     montoTotal: Float
+}
+
+type Receptora @key(fields: "id") {
+    id: ID!
+    transacciones: [Transaccion]
 }
 
 type Query {

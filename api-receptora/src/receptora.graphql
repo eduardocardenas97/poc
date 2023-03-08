@@ -14,9 +14,11 @@ type Receptora @key(fields: "id") {
     serviciosExcluidos: [Servicio]
 }
 
-type Servicio {
+type Servicio @key(fields: "id") {
     "Identificador único del servicio"
     id: ID!
+    "Receptoras que excluyen este servicio"
+    receptorasExcluidas: [Receptora]
 }
 
 type Query {

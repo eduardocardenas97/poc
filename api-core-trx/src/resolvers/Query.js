@@ -17,6 +17,12 @@ module.exports = {
                 lote: {
                     id: trx.loteId,
                 },
+                receptora: {
+                    id: trx.receptoraId,
+                },
+                servicio: {
+                    id: trx.servicioId,
+                },
             };
         },
     },

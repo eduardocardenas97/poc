@@ -26,7 +26,7 @@ module.exports = class LoteAPI extends DataSource {
             "utf8"
         );
         const lote = JSON.parse(loteData).lotes;
-        return lote.find((lote) => lote.id === id);
+        return lote.find((lote) => lote.id == id);
     }
 
     async getTransaccionesByLoteId(id) {
