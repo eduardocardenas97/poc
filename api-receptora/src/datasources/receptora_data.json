@@ -44,12 +44,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "id": 2,
-                    "nombre": "Sucursal 2",
-                    "direccion": "Calle 2",
-                    "telefono": "987654321"
                 }
             ]
         },

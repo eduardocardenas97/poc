@@ -21,6 +21,7 @@ module.exports = class ServicioAPI extends DataSource {
     }
 
     async getServicioById(id) {
+        console.log("ServicioAPI.getServicioById called for id " + id);
         const servicioData = fs.readFileSync(
             path.join(__dirname, "servicio_data.json"),
             "utf8"

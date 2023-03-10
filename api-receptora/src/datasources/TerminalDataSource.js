@@ -45,9 +45,14 @@ module.exports = class TerminalDataSource extends DataSource {
             "utf8"
         );
         const receptoras = JSON.parse(receptoraData).receptoras;
-        const sucursales = receptoras.map((receptora) => receptora.sucursales);
-        const terminales = sucursales.map((sucursal) => sucursal.terminales);
-        return terminales.find((terminal) => terminal.id == id);
+        const [sucursales] = receptoras.map(
+            (receptora) => receptora.sucursales
+        );
+        const [terminales] = sucursales.map((sucursal) => sucursal.terminales);
+        const terminal = terminales.find((terminal) => {
+            return terminal.id == id;
+        });
+        return terminal;
     }
 
     /**

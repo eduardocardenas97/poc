@@ -9,7 +9,6 @@ module.exports = {
 
             return receptora;
         },
-        
         receptoras: async (_, __, { dataSources }) => {
             const receptoras = await dataSources.receptoraAPI.getReceptoras();
             console.log(
@@ -17,6 +16,7 @@ module.exports = {
                     receptoras.length +
                     " receptoras"
             );
+            console.log(receptoras[0].sucursales[0].terminales[0]);
             return receptoras;
         },
         terminales: async (_, __, { dataSources }) => {

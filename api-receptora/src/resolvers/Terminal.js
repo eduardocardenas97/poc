@@ -6,8 +6,9 @@ module.exports = {
         },
 
         serviciosExcluidos: async ({ id }, _, { dataSources }) => {
-            return await dataSources.terminal.getTerminalById(id)
-                .serviciosExcluidos;
+            console.log("Terminal.serviciosExcluidos called for id " + id);
+            const servicios = await dataSources.terminal.getTerminalById(id);
+            return servicios.serviciosExcluidos;
         },
     },
 };
