@@ -2,7 +2,13 @@
 module.exports = {
     Terminal: {
         __resolveReference: async ({ id }, { dataSources }) => {
-            return await dataSources.terminal.getTerminalById(id);
+            console.log("Terminal.__resolveReference called for id " + id);
+            return {
+                ...(await dataSources.terminal.getTerminalById(id)),
+                sucursal: await dataSources.sucursal.getSucursalById(
+                    await dataSources.terminal.getSucursalIdByTerminalId(id)
+                ),
+            };
         },
 
         serviciosExcluidos: async ({ id }, _, { dataSources }) => {

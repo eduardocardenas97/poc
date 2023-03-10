@@ -17,8 +17,8 @@ module.exports = {
                 lote: {
                     id: trx.loteId,
                 },
-                receptora: {
-                    id: trx.receptoraId,
+                terminal: {
+                    id: trx.terminalId,
                 },
                 servicio: {
                     id: trx.servicioId,

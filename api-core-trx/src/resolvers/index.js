@@ -1,7 +1,7 @@
 const types = {
     ...require("./Transaccion"),
     ...require("./Lote"),
-    ...require("./Receptora"),
+    ...require("./Terminal"),
 };
 
 module.exports = {

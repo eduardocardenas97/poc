@@ -52,7 +52,7 @@ module.exports = class TerminalDataSource extends DataSource {
         const terminal = terminales.find((terminal) => {
             return terminal.id == id;
         });
-        return terminal;
+       return terminal;
     }
 
     /**

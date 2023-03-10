@@ -38,13 +38,13 @@ class TrxAPI extends DataSource {
         return trx.filter((trx) => trx.loteId === loteId);
     }
 
-    async getTransaccionesByReceptoraId(receptoraId) {
+    async getTransaccionesByTerminalId(terminalId) {
         const trxData = fs.readFileSync(
             path.join(__dirname, "trx_data.json"),
             "utf8"
         );
         const trx = JSON.parse(trxData).trx;
-        return trx.filter((trx) => trx.receptoraId === receptoraId);
+        return trx.filter((trx) => trx.terminalId === terminalId);
     }
 }
 

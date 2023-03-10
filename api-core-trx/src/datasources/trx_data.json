@@ -6,7 +6,7 @@
             "monto": 1000,
             "red": "PagoExpress",
             "loteId": "lote-1",
-            "receptoraId": 1,
+            "terminalId": 1,
             "servicioId": "1"
         },
         {
@@ -15,7 +15,7 @@
             "monto": 2000,
             "red": "PagoExpress",
             "loteId": "lote-1",
-            "receptoraId": 1,
+            "terminalId": 1,
             "servicioId": "1"
         },
         {
@@ -24,7 +24,7 @@
             "monto": 3001,
             "red": "PagoExpress",
             "loteId": "lote-1",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "2"
         },
         {
@@ -33,7 +33,7 @@
             "monto": 4000,
             "red": "PagoExpress",
             "loteId": "lote-2",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "1"
         },
         {
@@ -42,7 +42,7 @@
             "monto": 5000,
             "red": "PagoExpress",
             "loteId": "lote-3",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "1"
         },
         {
@@ -51,7 +51,7 @@
             "monto": 6000,
             "red": "PagoExpress",
             "loteId": "lote-3",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "1"
         },
         {
@@ -60,7 +60,7 @@
             "monto": 7000,
             "red": "PagoExpress",
             "loteId": "lote-3",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "1"
         },
         {
@@ -69,7 +69,7 @@
             "monto": 8000,
             "red": "AquiPago",
             "loteId": "lote-3",
-            "receptoraId": 3,
+            "terminalId": 3,
             "servicioId": "1"
         },
         {
@@ -78,7 +78,7 @@
             "monto": 9000,
             "red": "PagoExpress",
             "loteId": "lote-3",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "1"
         },
         {
@@ -87,7 +87,7 @@
             "monto": 10000,
             "red": "AquiPago",
             "loteId": "lote-3",
-            "receptoraId": 2,
+            "terminalId": 2,
             "servicioId": "3"
         }
     ]

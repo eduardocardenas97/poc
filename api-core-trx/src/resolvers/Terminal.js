@@ -1,7 +1,7 @@
 module.exports = {
-    Receptora: {
+    Terminal: {
         transacciones: async ({ id }, _, { dataSources }) => {
-            return dataSources.trxAPI.getTransaccionesByReceptoraId(id);
+            return dataSources.trxAPI.getTransaccionesByTerminalId(id);
         },
     },
 };
