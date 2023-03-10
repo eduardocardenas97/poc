@@ -10,20 +10,46 @@ type Receptora @key(fields: "id") {
     direccion: String!
     "telefono del servicio"
     telefono: String!
+    "Sucursales adheridas"
+    sucursales: [Sucursal]
+}
+
+type Sucursal @key(fields: "id") {
+    "Identificador unico de la sucursal"
+    id: ID!
+    "nombre de la sucursal"
+    nombre: String!
+    "direccion de la sucursal"
+    direccion: String!
+    "telefono de la sucursal"
+    telefono: String!
+    "terminales de la sucursal"
+    terminales: [Terminal]
+}
+
+type Terminal @key(fields: "id") {
+    "Identificador unico de la terminal"
+    id: ID!
+    "nombre de la terminal"
+    nombre: String!
     "servicios excluidos"
     serviciosExcluidos: [Servicio]
+    "Sucursal a la que pertenece la terminal"
+    sucursal: Sucursal
 }
 
 type Servicio @key(fields: "id") {
     "Identificador único del servicio"
     id: ID!
-    "Receptoras que excluyen este servicio"
-    receptorasExcluidas: [Receptora]
+    "Terminales que excluyen el servicio"
+    terminalesExcluidas: [Terminal]
 }
 
 type Query {
-    "Obtiene un lote por su identificador"
+    "Obtiene una receptora por su identificador"
     receptora(id: ID!): Receptora
-    "Obtiene todos los lotes"
+    "Obtiene todas las receptoras"
     receptoras: [Receptora]
+    "Obtiene todas las terminales"
+    terminales: [Terminal]
 }

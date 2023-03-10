@@ -5,12 +5,51 @@
             "nombre": "Receptor 1",
             "direccion": "Calle 1",
             "telefono": "123456789",
-            "serviciosExcluidos": [
+            "sucursales": [
                 {
-                    "id": 1
+                    "id": 1,
+                    "nombre": "Sucursal 1",
+                    "direccion": "Calle 1",
+                    "telefono": "123456789",
+                    "terminales": [
+                        {
+                            "id": 1,
+                            "nombre": "Terminal 1",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                },
+                                {
+                                    "id": 3
+                                },
+                                {
+                                    "id": 4
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "nombre": "Terminal 2",
+                            "telefono": "987654321",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "id": 2
+                    "id": 2,
+                    "nombre": "Sucursal 2",
+                    "direccion": "Calle 2",
+                    "telefono": "987654321"
                 }
             ]
         },
@@ -19,29 +58,74 @@
             "nombre": "Receptor 2",
             "direccion": "Calle 2",
             "telefono": "987654321",
-            "serviciosExcluidos": [
+            "sucursales": [
                 {
-                    "id": 1
+                    "id": 3,
+                    "nombre": "Sucursal 3",
+                    "direccion": "Calle 3",
+                    "telefono": "123456789",
+                    "terminales": [
+                        {
+                            "id": 3,
+                            "nombre": "Terminal 3",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "nombre": "Terminal 4",
+                            "telefono": "987654321",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "id": 2
-                },
-                {
-                    "id": 3
+                    "id": 4,
+                    "nombre": "Sucursal 4",
+                    "direccion": "Calle 4",
+                    "telefono": "987654321",
+                    "terminales": [
+                        {
+                            "id": 5,
+                            "nombre": "Terminal 5",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": 6,
+                            "nombre": "Terminal 6",
+                            "telefono": "987654321",
+                            "serviciosExcluidos": [
+                                {
+                                    "id": 1
+                                },
+                                {
+                                    "id": 2
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        },
-        {
-            "id": 3,
-            "nombre": "Receptor 3",
-            "direccion": "Calle 3",
-            "telefono": "123456789"
-        },
-        {
-            "id": 4,
-            "nombre": "Receptor 4",
-            "direccion": "Calle 4",
-            "telefono": "987654321"
         }
-    ]    
+    ]
 }
